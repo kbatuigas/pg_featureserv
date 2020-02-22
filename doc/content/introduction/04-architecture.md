@@ -5,9 +5,7 @@ draft: false
 weight: 175
 ---
 
-`pg_featureserv` has a simple architecture.
-It consists of a single server application, written in Go.
-It is configured via static (read-only) information sourced from a file, command-line and/or environment variables.
+`pg_featureserv` consists of a single server application, written in Go. It is configured via static (read-only) information sourced from a file, command-line and/or environment variables.
 
 `pg_featureserv` can run stand-alone or inside a containerized environment.
 It connects to a Postgres database using an internal database pool
@@ -24,8 +22,7 @@ Typically this is a web-mapping application running in a web browser,
 but it could also be a non-browser application (ranging from a simple data access utility such as `curl` or `OGR`
 to a desktop GIS application such as `QGIS`), or a web proxy mediating access to the service.
 
-
 The context diagram below shows `pg_featureserv` running alongside `pg_tileserv` to
 provide a PostGIS-centric "platform for the spatial web".
 
-![pg_feaureserv Architecture](../../static/pg_fs_architecture.png)
+![pg_feaureserv Architecture](/pg_fs_architecture.png)
